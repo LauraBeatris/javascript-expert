@@ -1,0 +1,20 @@
+[
+  {
+    "id": 123,
+    "name": "Laura Beatris",
+    "profession": "JavaScript Developer",
+    "age": 25
+  },
+  {
+    "id": 321,
+    "name": "Guilhermo Rauch",
+    "profession": "Vercel CEO",
+    "age": 25
+  },
+  {
+    "id": 231,
+    "name": "Steve Jobs",
+    "profession": "Genius",
+    "age": 26
+  }
+]
