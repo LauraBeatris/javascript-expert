@@ -5,4 +5,4 @@
 ## JavaScript Testing
 - [Mocks](./tests-modules/1-mocks) - Testing different behaviors 
 
-#### Thanks for [JavaScript Expert](https://javascriptexpert.com.br/lc_jse_out20_matriculas_abertas) course and [YDKJS](https://github.com/getify/You-Dont-Know-JS) book series for proving an amazing content.
+#### Thanks for the [JavaScript Expert](https://javascriptexpert.com.br/lc_jse_out20_matriculas_abertas) course and [YDKJS](https://github.com/getify/You-Dont-Know-JS) book series for proving an amazing content.
