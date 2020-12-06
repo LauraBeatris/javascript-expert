@@ -1,4 +1,4 @@
-const DEFAULT_ENCODING = "utf8"
+const DEFAULT_ENCODING = "utf8";
 
 module.exports = {
   DEFAULT_ENCODING
