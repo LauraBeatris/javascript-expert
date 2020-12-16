@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.test.js",
   "scripts": {
-    "test": "node index.test.js"
+    "fibonacci-test": "node ./src/Fibonacci/index.test.js",
+    "factorial-test": "node ./src/Factorial/index.test.js"
   },
   "keywords": [],
   "author": "Laura Beatris",

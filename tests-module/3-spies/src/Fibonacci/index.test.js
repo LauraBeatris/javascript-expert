@@ -1,8 +1,8 @@
 const { spy } = require('sinon');
 const { deepStrictEqual } = require('assert');
 
-const Fibonacci = require('./src/Fibonnaci');
-const { getFibonacciSequenceCallCount } = require('./src/utils');
+const Fibonacci = require('./Fibonacci');
+const { getFibonacciSequenceCallCount } = require('./utils');
 
 const FIBONACCI_SEQUENCE_MOCK_VALUE = 3;
 
@@ -22,23 +22,22 @@ const FIBONACCI_SEQUENCE_MOCK_VALUE = 3;
   {
     const fibonacci = new Fibonacci();
 
-    const executeSpy = spy(fibonacci, fibonacci.execute.name);
+    const fibonacciExecuteSpy = spy(fibonacci, fibonacci.execute.name);
 
     for await (
       const _sequenceResult of fibonacci.execute(FIBONACCI_SEQUENCE_MOCK_VALUE)
     ){} 
 
-    deepStrictEqual(
-      executeSpy.callCount, 
-      getFibonacciSequenceCallCount(FIBONACCI_SEQUENCE_MOCK_VALUE)
-    );
+    const expectedCallCount = getFibonacciSequenceCallCount(FIBONACCI_SEQUENCE_MOCK_VALUE);
+
+    deepStrictEqual(fibonacciExecuteSpy.callCount, expectedCallCount);
   }
 
   // Should assign correct params for a given Fibonacci call 
   {
     const fibonacci = new Fibonacci();
 
-    const executeSpy = spy(fibonacci, fibonacci.execute.name);
+    const fibonacciExecuteSpy = spy(fibonacci, fibonacci.execute.name);
 
     for await (
       const _sequenceResult of fibonacci.execute(FIBONACCI_SEQUENCE_MOCK_VALUE)
@@ -62,8 +61,8 @@ const FIBONACCI_SEQUENCE_MOCK_VALUE = 3;
       next: 3,
     });
 
-    deepStrictEqual(executeSpy.getCall(1).args, secondCallExpectedParams);
-    deepStrictEqual(executeSpy.getCall(2).args, thirdCallExpectedParams);
-    deepStrictEqual(executeSpy.getCall(3).args, fourthCallExpectedParams);
+    deepStrictEqual(fibonacciExecuteSpy.getCall(1).args, secondCallExpectedParams);
+    deepStrictEqual(fibonacciExecuteSpy.getCall(2).args, thirdCallExpectedParams);
+    deepStrictEqual(fibonacciExecuteSpy.getCall(3).args, fourthCallExpectedParams);
   }
 })();
