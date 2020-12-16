@@ -1,0 +1,15 @@
+{
+  "name": "3-spies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.test.js",
+  "scripts": {
+    "test": "node index.test.js"
+  },
+  "keywords": [],
+  "author": "Laura Beatris",
+  "license": "ISC",
+  "devDependencies": {
+    "sinon": "^9.2.2"
+  }
+}
