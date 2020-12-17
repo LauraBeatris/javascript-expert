@@ -1,0 +1,16 @@
+{
+  "name": "4-e2e-and-code-coverage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.test.js",
+  "scripts": {
+    "test": "mocha -w *.test.js --parallel"
+  },
+  "keywords": [],
+  "author": "Laura Beatris",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^8.2.1",
+    "supertest": "^6.0.1"
+  }
+}
