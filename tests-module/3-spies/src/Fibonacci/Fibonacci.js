@@ -1,4 +1,4 @@
-class Fibonacci { 
+class Fibonacci {
   *execute(input, current = 0, next = 1) {
     const hasEndedSequence = input === 0;
 

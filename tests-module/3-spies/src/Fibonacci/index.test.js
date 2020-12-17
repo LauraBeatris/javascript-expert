@@ -26,7 +26,7 @@ const FIBONACCI_SEQUENCE_MOCK_VALUE = 3;
 
     for await (
       const _sequenceResult of fibonacci.execute(FIBONACCI_SEQUENCE_MOCK_VALUE)
-    ){} 
+    ) { }
 
     const expectedCallCount = getFibonacciSequenceCallCount(FIBONACCI_SEQUENCE_MOCK_VALUE);
 
@@ -41,7 +41,7 @@ const FIBONACCI_SEQUENCE_MOCK_VALUE = 3;
 
     for await (
       const _sequenceResult of fibonacci.execute(FIBONACCI_SEQUENCE_MOCK_VALUE)
-    ){} 
+    ) { }
 
     const secondCallExpectedParams = Object.values({
       input: 2,
