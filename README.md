@@ -11,4 +11,7 @@
 ## Advanced Data Types
 - [Symbols](https://github.com/LauraBeatris/javascript-expert/tree/main/advanced-data-types/symbols) - Unique primitive values, mostly used as property identifiers for private attributes or methods. 
 
+## Objects
+- [Property Descriptors](https://github.com/LauraBeatris/javascript-expert/tree/main/objects/property-descriptors) - Defines the behavior and value of properties
+
 #### Thanks for the [JavaScript Expert](https://javascriptexpert.com.br/lc_jse_out20_matriculas_abertas) course and [YDKJS](https://github.com/getify/You-Dont-Know-JS) book series for proving an amazing content.
